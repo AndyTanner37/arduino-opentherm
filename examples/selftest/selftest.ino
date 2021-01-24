@@ -1,8 +1,8 @@
 // Wemos D1 R1
-#define THERMOSTAT_IN 16
-#define THERMOSTAT_OUT 4
-#define BOILER_IN 5
-#define BOILER_OUT 14
+//#define THERMOSTAT_IN 16
+//#define THERMOSTAT_OUT 4
+//#define BOILER_IN 5
+//#define BOILER_OUT 14
 
 // Wemos D1 R2
 //#define THERMOSTAT_IN 16
@@ -11,12 +11,13 @@
 //#define BOILER_OUT 0
 
 // Arduino UNO
-//#define THERMOSTAT_IN 2
-//#define THERMOSTAT_OUT 4
-//#define BOILER_IN 3
-//#define BOILER_OUT 5
+#define THERMOSTAT_IN 2
+#define THERMOSTAT_OUT 4
+#define BOILER_IN 3
+#define BOILER_OUT 5
 
 void setup() {
+  delay(2000);
   pinMode(THERMOSTAT_IN, INPUT);
   digitalWrite(THERMOSTAT_IN, HIGH); // pull up
   digitalWrite(THERMOSTAT_OUT, HIGH);
